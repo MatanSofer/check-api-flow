@@ -51,7 +51,9 @@ android {
         }
     }
 }
-
+hilt {
+    enableAggregatingTask = true
+}
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -95,4 +97,9 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
 
 
+}
+
+
+kapt {
+    correctErrorTypes = true
 }
